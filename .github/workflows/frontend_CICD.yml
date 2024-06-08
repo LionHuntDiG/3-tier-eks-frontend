@@ -64,6 +64,6 @@ jobs:
           kubectl rollout restart deployment frontend-deployment -n default
         else
           echo "Deployment doesn't exist, creating..."
-          wget https://raw.githubusercontent.com/fredritchie/3-tier-eks-manifests/main/frontend_deployment.yaml
+          wget https://raw.githubusercontent.com/LionHuntDiG/3-tier-eks-manifests/main/frontend_deployment.yaml
           kubectl apply -f frontend_deployment.yaml
         fi
